@@ -18,6 +18,6 @@
   <ul> If the car park is full</ul>
 </ul>
 <h5>First Commit Screenshot</h5>
-![First commit Screenshot](images/
+![First commit Screenshot](images/initial commit screenshot.png)
 </p>
 
