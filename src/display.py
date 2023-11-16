@@ -1,4 +1,4 @@
-
+from car_park import CarPark
 
 
 class Display:
@@ -11,4 +11,4 @@ class Display:
 
     def display_board(self, message):
         print(f"Temperature: {self.temperature}\n"
-              f"Available Bays: {self.available_bays()}")
+              f"Available Bays: {self.available_bays}")
