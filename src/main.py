@@ -1,24 +1,17 @@
-import display
 from sensor import EntrySensor, ExitSensor
 from display import Display
 from car_park import CarPark
 
 car_park = CarPark("Santa Monica Bays", "California", 66)
+car_park.register_display(Display(car_park))
 entry_sensor = EntrySensor(car_park)
 exit_sensor = ExitSensor(car_park)
 
+# user_input = input("Hit space bar to open the Santi Monica Bays for business")
+#
+# while user_input:
+#     entry_sensor.detect()
 
-# Set up:
-# Carpark
-# Display
-# EntrySensor
-# ExitSensor
-
-
-# Car Enters -
-    # Sensor detects
-print(car_park.cars_in_car_park)
-print(car_park.available_bays)
 
 entry_sensor.detect()
 

@@ -30,8 +30,9 @@ class Sensor(ABC):
 class EntrySensor(Sensor):
     """Triggered on entry"""
     def update_car_park(self, plate):
-        self.car_park.add_car(plate)
         print(f"PLATE #: {plate}")
+        self.car_park.add_car(plate)
+
 
 
 class ExitSensor(Sensor):
@@ -42,6 +43,7 @@ class ExitSensor(Sensor):
         self.update_car_park(plate)
 
     def update_car_park(self, car):
-        self.car_park.remove_car(car)
         print(f"EXITED PLATE #: {car}")
+        self.car_park.remove_car(car)
+
 
