@@ -14,20 +14,10 @@ exit_sensor = ExitSensor(car_park)
 
 
 entry_sensor.detect()
-
-print(car_park.cars_in_car_park)
-print(car_park.available_bays)
-
 entry_sensor.detect()
-print(car_park.cars_in_car_park)
-print(car_park.available_bays)
 entry_sensor.detect()
-print(car_park.cars_in_car_park)
-print(car_park.available_bays)
-
 exit_sensor.detect()
-print(car_park.cars_in_car_park)
-print(car_park.available_bays)
+
 
 
         # Random Plate is generated

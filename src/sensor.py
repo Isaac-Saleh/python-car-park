@@ -32,6 +32,7 @@ class EntrySensor(Sensor):
     def update_car_park(self, plate):
         print(f"PLATE #: {plate}")
         self.car_park.add_car(plate)
+        print("")
 
 
 

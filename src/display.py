@@ -1,4 +1,5 @@
-
+import car_park
+import time
 
 
 class Display:
@@ -11,5 +12,6 @@ class Display:
 
     def display_board(self, message, temp, bays):
         print(message)
-        print(f"Temperature: {temp}\n"
+        print(f"Current Time:{car_park.datetime.now().strftime('%H:%M:%S')}\n"
+              f"Temperature: {temp}\n"
               f"Available Bays: {bays}")
