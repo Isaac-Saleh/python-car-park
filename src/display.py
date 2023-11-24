@@ -7,11 +7,12 @@ class Display:
         self.car_park = car_park
         self.temperature = car_park.temperature
         self.available_bays = car_park.available_bays
-        self.show_full = False
-        self.banner = None
+        #self.show_full = False
+        # self.banner = None
 
     def display_board(self, message, temp, bays):
-        print(message)
-        print(f"Current Time:{car_park.datetime.now().strftime('%H:%M:%S')}\n"
-              f"Temperature: {temp}\n"
-              f"Available Bays: {bays}")
+        display_message = f"{message}\nCurrent Time:{car_park.datetime.now().strftime('%H:%M:%S')}\nTemperature: {temp}\nAvailable Bays: {bays}"
+        print(display_message)
+        return display_message
+
+

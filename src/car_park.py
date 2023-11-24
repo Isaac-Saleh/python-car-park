@@ -34,6 +34,13 @@ class CarPark:
             file.write(f"Plate: {plate} EntryTime:[{current_time}]\n")
             print("\n")
 
+    def print_car_park_log(self, file_path):
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+            for line in lines:
+                print(line.strip("\n"))
+
+
     def append_car_in_log(self, file_path, plate):
         current_time = datetime.now().strftime('%Y-%m-%d @ %H:%M:%S')
         with open(file_path, 'r') as file:
