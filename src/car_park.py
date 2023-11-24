@@ -28,6 +28,10 @@ class CarPark:
         for display in self.displays:
             display.display_board(f"<PARKING INFO>", self.temperature, self.available_bays)
 
+    def clear_log(self, file_path):
+        with open(file_path, 'w'):
+            pass
+
     def add_car_to_log(self, file_path, plate):
         current_time = datetime.now().strftime('%Y-%m-%d @ %H:%M:%S')
         with open(file_path, 'a') as file:

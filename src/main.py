@@ -10,8 +10,10 @@ car_park.register_display(Display(car_park))
 entry_sensor = EntrySensor(car_park)
 exit_sensor = ExitSensor(car_park)
 TIME_OPEN_FOR = 60  # The length of time (s) you wish to run the program for
+FILE_PATH = "car_park_log.txt"
 
-user_input = input("Hit Enter to open the Santa Monica Bays for business")
+car_park.clear_log(FILE_PATH)
+user_input = input("Hit Enter to open the Santa Monica Bays for business...\n")
 if len(user_input) < 1:
     open_time = time.time()
     print("\nCAR PARK NOW OPEN!!\n")
